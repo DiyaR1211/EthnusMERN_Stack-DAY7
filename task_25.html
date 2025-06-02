@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Gallery</title>
+  <style>
+    body {
+      background-color: #eee;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 1.8em;
+      font-weight: bold;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .gallery-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 25px;
+      border: 4px solid black;
+      border-radius: 10px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .photo-box {
+      background-color: #f3f3f3;
+      border-radius: 15px;
+      overflow: hidden;
+      height: 160px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .photo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">Photo Gallery</div>
+
+  <div class="gallery-container">
+    <div class="gallery">
+      <!-- Row 1 -->
+      <div class="photo-box"><img src="image_1.jpg" alt="1"></div>
+      <div class="photo-box"><img src="image_2.jpg" alt="2"></div>
+      <div class="photo-box"><img src="image_3.jpg" alt="3"></div>
+      <div class="photo-box"><img src="bg_image2.jpg" alt="4"></div>
+
+      <!-- Row 2 -->
+      <div class="photo-box"><img src="image_2.jpg" alt="5"></div>
+      <div class="photo-box"><img src="bg_image2.jpg" alt="6"></div>
+      <div class="photo-box"><img src="image_1.jpg" alt="7"></div>
+      <div class="photo-box"><img src="image_3.jpg" alt="8"></div>
+    </div>
+  </div>
+
+</body>
+</html>
